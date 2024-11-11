@@ -1,0 +1,35 @@
+
+
+.gallery {
+ 
+    display: grid;
+
+}
+
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 480px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr; 
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .gallery {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+
+
+
